@@ -14,14 +14,13 @@ Below summary tables are produced by `analyze_report.py`:
     Priority of assigning type of pins is shown below (left is highest, right is lowest). 
     - types of pin: `I/O`, `MGT rx/tx`, `MGT refclk`, `Config`, `Monitor`, `Power/GND`, `Not Connected`  
     
-- `table_port_with_no_net.tex`  
-    Table of `PORT`s (with pin) that are not connected to `NET`.
-    
 - `table_io_pin_count_by_bank.tex`  
     Table of `I/O` `PACKAGE_PIN` count by FPGA bank.
     Counts all `I/O` pins, `I/O` pins connected to `PORT`, and `I/O` pins connected to `NET`.
 
-
+- `table_port_with_no_net.tex`  
+    Table of `PORT`s (with pin) that are not connected to `NET`.
+    
 
 # Example table outputs
 
