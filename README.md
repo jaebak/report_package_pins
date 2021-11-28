@@ -1,6 +1,6 @@
 # Description
-Extracts `PACKAGE_PIN` information into a text table from an implemented firmware design in a Vivado project using `report_package_pins.tcl` script.  
-Produces summary latex tables using `analyze_report.py` and text table.
+Extracts `PACKAGE_PIN` information into a text table file from an implemented firmware design in a Vivado project using `report_package_pins.tcl` script.  
+Produces summary latex tables using `analyze_report.py` and text table file.
 
 # Example table outputs
 
@@ -24,9 +24,10 @@ There are two methods of running `report_package_pins.tcl` script
 
 `vivado -nojournal -nolog -mode batch -source report_package_pins.tcl -tclargs PATH_TO_PROJECT.xpr DESIGN_NAME OUTPUT_FILENAME`
 
-`DESIGN_NAME` is implemented design name in Vivado and `OUTPUT_FILENAME` is file that has text table
+[Note] `DESIGN_NAME` is implemented design name in Vivado and `OUTPUT_FILENAME` is filename that has text table
 
-Example: `vivado -mode batch -source report_package_pins.tcl -tclargs project.xpr impl_1 report_package_pins.txt`
+Example:  
+`vivado -mode batch -source report_package_pins.tcl -tclargs project.xpr impl_1 report_package_pins.txt`
 
 ### Method 2: Run tcl script in Vivado tcl mode with arguments
 
@@ -37,11 +38,13 @@ Example: `vivado -mode batch -source report_package_pins.tcl -tclargs project.xp
 
 ## Running `analyze_report.py` script
 
+Requires `report_package_pins.tcl` output text table file (`REPORT_FILENAME`)  
+
+Run below command:  
 `analyze_report.py --input_report_filename REPORT_FILENAME`  
 
-`REPORT_FILENAME` is output filename of `report_package_pins.tcl`.
-
-Example: `analyze_report.py --input_report_filename report_package_pins.txt`
+Example:   
+`analyze_report.py --input_report_filename report_package_pins.txt`
 
 # `report_package_pins.tcl` details
 `report_package_pins.tcl` makes a file `report_package_pins.txt` containing a text table.
