@@ -10,11 +10,11 @@ Example text table from `report_package_pins.tcl`
 Example latex tables from `analyze_report.py`
 
 - `table_pin_count_by_type.tex`  
-![](README_figure/table_pin_count_by_type.pdf)
+![](README_figure/table_pin_count_by_type.png)
 - `table_io_pin_count_by_bank.tex`  
-![](README_figure/table_io_pin_count_by_bank.pdf)
+![](README_figure/table_io_pin_count_by_bank.png)
 - `table_port_with_no_net.tex`  
-![](README_figure/table_port_with_no_net.pdf)
+![](README_figure/table_port_with_no_net.png)
 
 # Running scripts
 ## Running `report_package_pins.tcl` script
