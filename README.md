@@ -19,7 +19,7 @@ Below summary tables are produced by `analyze_report.py`:
     Counts all `I/O` pins, `I/O` pins connected to `PORT`, and `I/O` pins connected to `NET`.
 
 - `table_port_with_no_net.tex`  
-    Table of `PORT`s (with pin) that are not connected to `NET`.
+    Table of `PORT`s (with pin) that are not connected to `NET` (= Unused PORT/pins).
     
 
 # Example table outputs
